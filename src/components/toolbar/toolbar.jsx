@@ -47,14 +47,14 @@ export const Toolbar = () => {
                     </InputGroup>
                 </div>
                 <div className="d-flex flex-column justify-content-between">
-                    <Form.Label className="mb-0">Likes</Form.Label>
+                    <Form.Label className="mb-0">Likes <span className="text-black-50">{toolbarParams.likes}</span></Form.Label>
                     <Form.Range
                         value={toolbarParams.likes}
                         onChange={setLikes}
                         className="mb-2"
                         min={0}
                         max={10}
-                        step={1}
+                        step={0.1}
                     />
                 </div>
                 <div>

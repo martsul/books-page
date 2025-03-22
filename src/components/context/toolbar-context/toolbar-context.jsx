@@ -50,7 +50,7 @@ export const ToolbarContextProvider = ({children}) => {
 
     const setRandomSeed = () => {
         const random = `${Math.random()}`.slice(2);
-        dispatch({ type: SET_SEED, payload: random });
+        dispatch({ type: SET_SEED, payload: +random });
     };
 
     const setLikes = (event) => {
