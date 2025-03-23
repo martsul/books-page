@@ -1,18 +1,7 @@
 .table {
     display: grid;
-    grid-template-columns: repeat(2, max-content) repeat(4, auto);
-}
-
-.headText {
-    font-weight: 600;
-    border-bottom: 1px solid #000;
-}
-
-.allInfo {
-    grid-column: 1 / 7;
-}
-
-.more {
-    background: transparent;
-    border: none;
+    grid-template-columns: 35px 50px repeat(4, auto);
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 100px;
 }

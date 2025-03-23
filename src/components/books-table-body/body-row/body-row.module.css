@@ -1,0 +1,16 @@
+.allInfo {
+    grid-column: 1 / 7;
+}
+
+.more {
+    background: transparent;
+    border: none;
+}
+
+.even {
+    background: #e3e3e3;
+}
+
+.active {
+    background: #e6fcff;
+}

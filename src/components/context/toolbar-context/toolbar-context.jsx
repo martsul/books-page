@@ -2,8 +2,8 @@ import { useReducer } from "react";
 import { ToolbarContext } from ".";
 
 const DEFAULT_VALUES = {
-    language: "english",
-    seed: 42,
+    language: "en",
+    seed: 50,
     likes: 0,
     reviews: 0,
     view: "table",
@@ -49,7 +49,7 @@ export const ToolbarContextProvider = ({children}) => {
     };
 
     const setRandomSeed = () => {
-        const random = `${Math.random()}`.slice(2);
+        const random = Math.floor(Math.random() * 10000);
         dispatch({ type: SET_SEED, payload: +random });
     };
 
