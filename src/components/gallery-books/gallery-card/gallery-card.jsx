@@ -21,7 +21,7 @@ export const GalleryCard = ({ index }) => {
     return (
         <>
             <Card onClick={() => setShow(!show)} className={`m-3 ${styles.card}`}>
-                <div className="position-relative">
+                <div className="position-relative overflow-hidden">
                     <span className={styles.imgTop}>{title}</span>
                     <Card.Img variant="top" src={img} />
                     <span className={styles.imgBottom}>{author}</span>
