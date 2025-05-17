@@ -28,9 +28,9 @@ export const Details = ({ data, countLikes, transform }) => {
                 <h2 className="m-0 fw-semibold text-capitalize">{title}</h2>
                 <p className="fst-italic fw-semibold fs-4 m-0">{author}</p>
                 <p className="fw-semibold text-black-50 m-0">{publisher}</p>
-                <p className="fs-4 fw-semibold text-capitalize m-0">
+                {Boolean(reviews.length) && <p className="fs-4 fw-semibold text-capitalize m-0">
                     {foreignWords.review[language]}
-                </p>
+                </p>}
                 {reviews.map((e, ind) => (
                     <BodyReview key={ind} data={e} />
                 ))}
